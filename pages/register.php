@@ -16,7 +16,8 @@
 <div>
     <h1 class="text-white text-center">Auth Page</h1>
     <div class="container d-flex justify-content-center">
-        <form class="w-25 bg-secondary p-2 m-2">
+        <div class="w-25 bg-secondary p-2 m-2">
+        <!-- <form class="w-25 bg-secondary p-2 m-2" action> -->
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter name">
@@ -26,19 +27,21 @@
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password">
+                <label for="passwordinp">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
             </div>
             <div class="form-group">
-                <label for="cpassword">Please write again</label>
+                <label for="cpasswordinp">Please write again</label>
                 <input type="password" class="form-control" id="cpassword" placeholder="Password">
             </div>
             <div class="d-flex justify-content-between">
-                <button type="submit" class="btn btn-primary mt-2">Registretion</button>
+                <button type="submit" class="btn btn-primary mt-2" id="register">Registretion</button>
                 <a class="nav-link text-dark mt-2" href="http://localhost/shoping/pages/auth.php?action=auth">Login</a>
-            </div>
-        </form>
+                <a  class="nav-link text-dark mt-2" href="http://localhost/shoping/pages/?action=home"><i class="bi bi-box-arrow-left">Home</i></a>
+        <!-- </form> -->
+        </div>
+    </div>
     </div>
 </div>
 <?php require_once "footer.php" ?>
-<script type="text/javascript" src="../JS/register.js"></script>
+<script type="text/javascript" src="../JS/regist.js"></script>
